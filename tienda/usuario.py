@@ -10,8 +10,6 @@ class Usuario:
         self.email = email
         self.contraseña = contraseña
 
-#usuario = Usuario(1, "Juan", "Perez", "JuanPereaz@gmail.com", "clave123")
-#print(usuario.__dict__)
 
 
     

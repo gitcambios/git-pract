@@ -7,3 +7,5 @@ class Direccion:
         self.codigo_postal = codigo_postal
         self.provincia  = provincia
 
+    def __str__(self):
+        return f"{self.calle} {self.numero}, {self.ciudad}, CP {self.codigo_postal}, {self.provincia}"

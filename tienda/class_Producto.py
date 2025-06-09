@@ -1,3 +1,5 @@
+from tienda.Class_Categoria import Categoria
+
 class Producto:
     def __init__(self, id_producto, nombre, descripcion, precio, stock, categoria, talles, colores ):
         self.id_producto = id_producto
@@ -21,3 +23,15 @@ class Producto:
             f"Colores Disponibles: {', '.join(self.colores)}\n"
             f"Stock Disponible: {self.stock}\n"
         )
+    
+    def agregarStock(self, cantAgregar):
+        if cantAgregar <= 0:
+            raise ValueError("Cantidad invalida para agregar stock")
+        self.stock += cantAgregar
+
+
+    def eliminarStock(self, cantEliminar):
+        if cantEliminar > self.stock:
+            raise ValueError("No hay suficiente stock disponible")
+        self.stock -= cantEliminar
+
