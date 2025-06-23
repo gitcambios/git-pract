@@ -4,12 +4,12 @@ from tienda.usuario import Usuario
 from tienda.direccion import Direccion
 
 class Cliente(Usuario):
-    def __init__(self, nombre, apellido, email, contraseña, telefono, direccion):
+    def __init__(self, nombre, apellido, email, contraseña, telefono, direccion, carrito):
         super().__init__(nombre, apellido, email, contraseña)
         self.telefono = telefono
         self.direccion  = direccion
         self.historialPedido = []
-        self.carrito = Carrito()
+        self.carrito = carrito
 
     def verHistoriaPedidos(self):
         contPedido = 0

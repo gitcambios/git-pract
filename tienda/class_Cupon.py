@@ -14,7 +14,7 @@ class Cupon:
     
     def aplicarDescuento(self, montoTotal):
         if self.esValido():
-            return montoTotal * (1 - self.porcentaje)
+            return montoTotal * (1 - self.porcentaje /100)
         else:
             return montoTotal
 
