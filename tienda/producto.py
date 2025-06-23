@@ -1,4 +1,4 @@
-from tienda.Class_Categoria import Categoria
+from tienda.categoria import Categoria
 
 class Producto:
     def __init__(self, id_producto, nombre, descripcion, precio, stock, categoria, talles, colores ):

@@ -1,4 +1,4 @@
-from tienda.class_Producto import Producto
+from tienda.producto import Producto
 
 class ItemCarrito:
     def __init__(self, producto, cantidad):

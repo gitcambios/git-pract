@@ -4,7 +4,7 @@ class Usuario:
 
     def __init__(self, nombre, apellido, email, contraseña):
         self.id_usuario = Usuario.contador_id
-        Usuario.contador_id += 1     #vamos aumentando el numero del id para el siguiente usuario
+        Usuario.contador_id += 1     
         self.nombre = nombre
         self.apellido = apellido
         self.email = email

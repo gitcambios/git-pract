@@ -1,15 +1,15 @@
 import unittest
 from datetime import date
-from tienda.class_itemPedido import ItemPedido
-from tienda.class_Producto import Producto
-from tienda.class_Pedido import Pedido
-from tienda.class_Cupon import Cupon
-from tienda.class_Carrito import Carrito
+from tienda.itemPedido import ItemPedido
+from tienda.producto import Producto
+from tienda.pedido import Pedido
+from tienda.cupon import Cupon
+from tienda.carrito import Carrito
 from tienda.cliente import Cliente
 
 class TestPedido(unittest.TestCase):
     def setUp(self):
-        # Producto de prueba
+        
         self.producto = Producto(
             id_producto=1,
             nombre="Camisa",
@@ -21,16 +21,11 @@ class TestPedido(unittest.TestCase):
             colores=["Blanco", "Negro"]
         )
 
-        # Cupon de prueba
         self.cupon = Cupon("DES10", 10, 5)
-
-        # Cliente y carrito
         self.cliente = Cliente("Juan", "Perez", "juan@mail.com", "1234", "123456789", None, None)
         self.carrito = Carrito(id_carrito=1, cliente=self.cliente)
-        self.cliente.carrito = self.carrito  # conectar ambos
+        self.cliente.carrito = self.carrito  
         self.item = ItemPedido(self.producto, 2, self.producto.precio)
-
-        # Pedido de prueba
         self.pedido = Pedido(1, self.cliente, "Tarjeta", "Envio a domicilio", self.cupon)
 
     def test_agregar_item(self):
@@ -71,5 +66,3 @@ class TestPedido(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-        

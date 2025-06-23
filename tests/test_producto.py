@@ -1,6 +1,6 @@
 import unittest
-from tienda.class_Producto import Producto
-from tienda.Class_Categoria import Categoria
+from tienda.producto import Producto
+from tienda.categoria import Categoria
 
 class TestProducto (unittest.TestCase):
 

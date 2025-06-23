@@ -1,5 +1,5 @@
-from tienda.class_ItemCarrito import ItemCarrito
-from tienda.class_Producto import Producto
+from tienda.itemCarrito import ItemCarrito
+from tienda.producto import Producto
 
 class Carrito:
     def __init__(self, id_carrito, cliente):
