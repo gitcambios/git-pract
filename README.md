@@ -18,30 +18,6 @@ Este es un sistema de tienda online desarrollado en Python usando POO. Su objeti
 - **Jira** para gestión de tareas
 - **Git ** y **GitHub** para control de versiones
 
-### Estructura del Proyecto
-<p>tienda_online/
-│
-├── tienda/
-│ ├── class_Producto.py
-│ ├── class_Carrito.py
-│ ├── class_ItemCarrito.py
-│ ├── class_Pedido.py
-│ ├── class_itemPedido.py
-│ ├── class_Cupon.py
-│ ├── class_Envio.py
-│ ├── class_Categoria.py
-│ ├── administrador.py
-│ ├── cliente.py
-│ ├── direccion.py
-│ └── usuario.py
-│
-├── tests/
-│ ├── test_pedido.py
-│ ├── test_producto.py
-│
-└── README.md
-<p>
-
 ### Cómo ejecutar el proyecto
 1.  Clonar el repositorio:
 
