@@ -1,8 +1,7 @@
-from tienda.class_itemPedido import ItemPedido
+from tienda.itemPedido import ItemPedido
 from tienda.cliente import Cliente
-from tienda.class_Cupon import Cupon
+from tienda.cupon import Cupon
 from datetime import date
-
 
 class Pedido:
     def __init__(self, id_pedido, cliente, metodoPago, envio,cupon):

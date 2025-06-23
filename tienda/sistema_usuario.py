@@ -22,7 +22,4 @@ class SistemaUsuario:
                 else:
                     return "contraseña_incorrecta"
         return "email_no_registrado"
-
-
-
-            
+    
