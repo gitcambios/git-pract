@@ -28,6 +28,6 @@ Este es un sistema de tienda online desarrollado en Python usando POO. Su objeti
 	`python -m unittest discover tests
 `
 
-###Autoras
+### Autoras
 - Sofia Reynaga
 - Yolanda Paco
